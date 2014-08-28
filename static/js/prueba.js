@@ -6,5 +6,5 @@ var Backbone = require('backbone'),
 $(function(){
 	var header = new HeaderView();
 	header.render();
-	console.log('Hello world!');
+	$('body').prepend(header.$el);
 });
