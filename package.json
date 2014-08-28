@@ -1,0 +1,30 @@
+{
+  "name": "YoutubeSearch",
+  "version": "0.0.0",
+  "description": "Proyecto para practicar HTML, CSS y JS",
+  "main": "index.js",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "jquery": "^2.1.1",
+    "swig": "^1.4.2",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JEscalanteGT/YoutubeSearch.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JEscalanteGT/YoutubeSearch/issues"
+  },
+  "homepage": "https://github.com/JEscalanteGT/YoutubeSearch"
+}
