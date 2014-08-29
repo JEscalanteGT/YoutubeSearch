@@ -23,7 +23,6 @@ module.exports = Backbone.View.extend({
     return this;
   },
   displayMenu: function (){
-  	this.$('#Header-nav').toggleClass('Header-nav--hidden Header-nav');
-  	console.log("Ay!");
+  	this.$('#Header-nav').toggleClass('Header-nav--displayMenu');
   }
 });

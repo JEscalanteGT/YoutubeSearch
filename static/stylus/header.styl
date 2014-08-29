@@ -16,18 +16,38 @@
         font-size: 0
         padding: 0.375rem 1.25rem 0.375rem 0.625rem
     .Header-nav
-        //display: none !important
         font-size: 1.5em
-        margin-top: 0.625rem
+        overflow: hidden
         ul
             list-style: none
-            margin: 0
+    .Header-logo, .Header-searchBox
+        display: inline-block
+        vertical-align: top
+        
+.u-container
+    display: block
+    margin: 0
+    padding: 0.125em 0px
+    overflow: hidden
+
+.u-animacionVertical
+    max-height: 200px
+
+@media screen and (min-width:480px)
+    .Header-nav
+        max-height: 0
+        transition: max-height 0.3s ease-out
+        ul
+            list-style: none
+            margin: 0.625rem 0rem
             padding: 0
             li
+                border-bottom: 1px solid gris1
                 display: block
                 margin: 0
                 padding: 0.5rem 0.25rem
                 a
+                    color: gris3
                     display: block
                     font-size: 1.25rem
                     margin: 0
@@ -41,9 +61,10 @@
                     border-radius: 0.25rem
                     a, span
                         color: blanco
-        &--hidden
-            display: none !important
-
+                &:last-child
+                    border: none
+    .Header-nav--displayMenu
+        max-height: 200px;
                 
     .Header-menuButton
         background-color: transparent
@@ -54,12 +75,26 @@
         padding: 0.5rem 0.625rem
         &:hover
             color: gris3
-    .Header-logo, .Header-searchBox
-        display: inline-block
-        vertical-align: top
-        
-.u-container
-    display: block
-    margin: 0
-    padding: 0.125em 0px
-    overflow: hidden
+
+@media screen and (min-width:721px)
+    .Header-nav
+        max-height: 52px
+        float: right
+        ul
+            margin: 0
+            li
+                border: none
+                display: inline-block
+                a
+
+                    > span
+                        display: none
+                &:last-child
+                    border-left: 1px solid gris3
+                    a
+                        content: ""
+                        > span
+                            display: inline-block
+                    
+    .Header-menuButton
+        display: none
